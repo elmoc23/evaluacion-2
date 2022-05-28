@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+@import url('fonts-letra/webfontkit-20220523-200044/stylesheet.css');
+@import url('fonts-letra/adineuePRO/stylesheet.css');
+@import url('fonts-letra/fontawesome-free-6.1.1-web/css/all.css');
+:root{
+    --color1:#9F09AC;
+    --color2:#BD0F71;
+    --color3:#8826D1;
+    --color4:#F8550E;
+    --color5:#E30057;
+    --color6:#3737DB;
+    --color7:#232427;
+    --color8:#1B1C20;
+    --color9:#0F0F10;
+    --color-blanco:#FFFFFF;
+    --color-negro:#000000;
+    --color-gris-claro:#CCCCCC;
+    --color-gris-oscuro:#555555;
+}
+body{
+    /* refrencia ala pagina*/
+    background-color: var(--color-blanco);
+    color: var(--color-gris-claro);
+    margin: 0;   
+}
+img{
+    display: block;
+}
+a{ 
+    color: var(--color4);
+    text-decoration: none;/* para ocultar el subrayado por defecto */
+   
+}
+a:hover{
+    color: var(--color6);
+    text-decoration: underline;
+}
+p{
+    font-family: 'Abhaya Libre';
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--color-blanco);
+}
+h1, h2, h3, h4, h5,h6{
+    margin: 0;
+}
+h1{
+    font-weight: 900;/* de esa manera se indiaca el estilo a usar*/
+    font-size: 48px;/* tamañno de fuente */
+    letter-spacing: 2px;/* espacio entre letra y letra*/
+    font-family: 'zeniqnano';
+    color: var(--color9);
+
+}
+h2{
+    font-family: 'adineue PRO Cyr Bold Web';
+    font-weight: 200;/* de esa manera se indiaca el estilo a usar*/
+    font-size: 40px;/* tamañno de fuente */
+    letter-spacing: 2px;/* espacio entre letra y letra*/
+    /*text-transform: lowercase;*//*letra en minuscula */
+    margin-bottom: 30px;
+}
+h3{
+    font-family: 'adineue PRO Cyr Light Web';
+    font-weight: 200px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #F8550E;
+}
+
+#main-header{
+    background:linear-gradient(#9F09AC,#BD0F71);
+    color: var(--color-negro);
+   
+}
+#main-header h1{
+    text-align: center;
+    
+   
+}
+#anuncio{
+    background-image: url('../imagenes/grammyty2.png');
+    background-size: cover;
+    background-position: right center;
+}
+#anuncio p{
+    color:var(--color4);
+    font-family: 'zeniqnano';
+    text-shadow: -3px 5px var(--color-negro);
+}
+#novedades{
+    background: linear-gradient(#BD0F71,#0F0F10);
+}
+#novedades img {
+    box-shadow: 10px 10px var(--color8);
+    margin-bottom: 30px;
+}
+#nominados{
+    text-align: center;
+    background: linear-gradient(#0F0F10,#232427);
+ }
+#nominados img{
+     border-radius: 80%;
+     margin-bottom: 15px;
+     
+ }
+ #nominados a{
+     text-align: center;
+     margin-bottom: 20px;
+
+     
+ }
+ #aniversario{
+    background-image: url("../imagenes/grammy.jpg");
+    background-size: cover ;
+    background-attachment: fixed;/*para que la imagen de fondo quede fija a la ventana del navegador*/
+    text-align: right; 
+    
+}
+#aniversario p{
+    color:var(--color-gris-claro);
+    font-family: 'Koulen';
+    text-shadow: -3px 5px var(--color9);
+    letter-spacing: 1px;
+}
+ #momentos{
+     background: linear-gradient(#8826D1,#BD0F71,#232427);
+ }
+ #imagen-momentos{
+    margin-top: -50px;
+}
+#noticias{
+    background: linear-gradient(#232427,#1B1C20);
+}
+#noticias .col{
+    background:linear-gradient(45deg,var(--color2), var(--color8));
+    border: solid 1px var(--color1);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 15px;
+    border-radius: 10px;
+    /* box-sahdow : 5px 10 px 15px 0px rgba(0 , 0 ,0 ,0.03%);*/
+    box-shadow: 5px 10px 15px 0px rgb(0 0 0 / 100%);
+}
+#noticias img{
+    margin-bottom: 15px;
+}
+#noticias a{
+    
+    text-decoration: none;
+}
+
+#historia{
+    background:linear-gradient(#1B1C20,#3737DB); 
+}
+
+
+.container{
+    max-width: 1200px;/* Ancho máximo */
+
+    margin-left: auto;
+    margin-right: auto;
+    /* Para que se centre el objeto */
+}
+.padded{
+    /* cuando se define la regla para una clase se empieza con punto una clase se puede utilizar varias veces*/
+    padding-top: 90px;
+    padding-bottom :90px;
+}
+.col{
+    flex-basis: 0;/*para asignar un ancho minimo*/
+    flex-grow: 1;/* Para indicar que todas tengan el mismo crecimiento */
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box; /* para que el padding no incremente el ancho del objeto*/
+    
+}
+
+.col-48{
+    flex-basis: 48%;
+    max-width: 48%;
+
+}
+.col-66{
+    flex-basis: 66.67%;
+    max-width: 66.67%;
+}
+.row{
+    display: flex;/*por defecto acomodo los objetos por defecto */
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.texto-importante{
+    font-size: 64px;
+    line-height: 1.0;
+}
+.mega-texto{
+    color: var(--color-blanco);
+}
+.boton-vinculo{
+    background-color: var(--color-negro);
+    color: var(--color1);
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 23px;
+    border: solid 2px var(--color-negro);
+}
+.boton-vinculo:hover{
+    border: solid 2px var(--color-negro);
+    background-color: transparent!important;
+    color: var(--color-blanco)!important;
+    text-decoration: none;
+}
+.alinear-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.foto-contenedor{
+    position: relative;
+}
+.foto-descripcion{
+    position: absolute;
+    background-color: rgb(0 0 0 / 60%);
+    color: var(--color-blanco);
+    top:0;
+    height: 100%;
+    width: calc(100% - 30px);/* ajustar el color del tecto en la imgane oprecion*/
+    padding: 60px;
+    box-sizing:border-box;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.foto-descripcion:hover{
+    opacity: 1;
+}
+.fa-solid{
+    font-size: 15px;
+    letter-spacing: 10px;
+}
+.row-fin{
+    display: flex;/*por defecto acomodo los objetos por defecto */
+    margin-left: -15px;
+    margin-right: -12px;
+}
+.col-fin{
+    flex-basis:0;/*para asignar un ancho minimo*/
+    flex-grow: 1;/* Para indicar que todas tengan el mismo crecimiento */
+    padding-left: 15px;
+    padding-right: 19px;
+}
+#pie-final{
+    background-color: var(--color7);
+    color: var(--color-blanco); 
+}
+#pie-final h3{
+    font-family: 'adineue PRO Cyr Bold Web';
+    font-size: 55px;
+    font-weight: 300;/* de esa manera se indiaca el estilo a usar*/
+    font-size: 15px;/* tamañno de fuente */
+    margin: 14px;
+    color: var(--color-blanco);
+    
+       
+}
+#pie-final p{
+    font-family:'Abhaya Libre';
+    font-size:15px;
+    margin: 14px;
+}
+
+#icono-final{
+    background-color:var(--color7);
+    background-size: cover;
+    background-position: right center;
+    color: var(--color-blanco);
+
+}
+#icono-final p{
+    text-align: right;
+    font-size: 30px;
+    letter-spacing: 10px;
+
+}
